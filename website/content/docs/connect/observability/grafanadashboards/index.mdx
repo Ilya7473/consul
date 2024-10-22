@@ -7,7 +7,7 @@ description: >-
 
 # Dashboards for service mesh observability
 
-This topic describes the configuration and usage of dashboards for monitoring and managing services within a Consul-managed Envoy service mesh. These dashboards provide critical insights into the health, performance, and resource utilization of services. The dashboards described here are essential tools for ensuring the stability, efficiency, and reliability of your service mesh environment. This page provides reference information about the Grafana dashboard configurations included in [this GitHub repository](https://github.com/hashicorp/consul/tree/main/grafana).
+This topic describes the configuration and usage of dashboards for monitoring and managing services within a Consul-managed Envoy service mesh. These dashboards provide critical insights into the health, performance, and resource utilization of services. The dashboards described here are essential tools for ensuring the stability, efficiency, and reliability of your service mesh environment. This page provides reference information about the Grafana dashboard configurations included in the `grafana` directory within the [Consul repository](https://github.com/hashicorp/consul/tree/main/grafana).
 
 ## Dashboards overview
 
@@ -27,7 +27,7 @@ The repository includes the following dashboards:
 
 Add the following configurations to your Consul Helm chart to enable the prometheus tools.
 
-```yaml
+<CodeBlockConfig highlight="4-8,10-11,16-18,24-27">
 global:
   acls:
     manageSystemACLs: true
